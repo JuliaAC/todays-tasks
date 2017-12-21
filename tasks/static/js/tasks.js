@@ -24,7 +24,6 @@ function appendList() {
 		text += '<option value="'+ lists[i] + '">' + lists[i] + '</option>';
 	}
 	document.getElementById("list").innerHTML = text;
-	alert('List Added');
 }
 
 function newTask() {
