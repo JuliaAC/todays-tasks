@@ -1,0 +1,122 @@
+head {
+	
+}
+
+body {
+background-color: #FFFFFF;
+font: arial black, verdana;
+}
+
+.addTask ,.addList{
+	background-color: #EFEFEF;
+	display:none;
+}
+
+.container, #top, .wrapper, #menubar, #main, #next, #bottom {
+	border: none;
+}
+
+.task, .done {
+	border: solid;
+	border-color: #353535;
+	background-color: #EFEFEF;
+	margin: 10px;
+	width: auto;
+	height: auto;
+}
+
+
+.task p:before {
+	content: url(images/todo.png);
+}
+
+.done p:before {
+	content: url(images/done.png);
+}
+
+.done {
+	text-decoration: line-through;
+}
+
+.container {
+	position: relative;
+	border-color: white;
+}
+
+#top {
+	border-color: red;
+	padding:15px;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #EFEFEF;
+}
+
+li{
+	float: left;
+}
+
+li a {
+	display: block;
+	color: #303030;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #303030;
+	color: #EFEFEF
+}
+
+li a.active {
+	color: #303030;
+	background-color: #05C5ED;
+}
+
+li:last-child {
+	float:right;
+}
+.wrapper {
+	position: relative;
+	border-color: blue;
+}
+
+#menubar {
+	width: 100%;
+	float: auto;
+	border-color: black;
+}
+
+#menulist {
+	
+}
+
+#main {
+	border-color: yellow;
+	padding: 10px;
+	margin: 0px;
+	width: 80%;
+}
+
+#next {
+	border-color: green;
+	padding: 10px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 30%;
+	position: absolute;
+	background-color: #05C5ED;
+	display:none;
+}
+
+#bottom {
+	border-color: purple;
+	padding: 0px;
+	bottom: 0px;
+}
